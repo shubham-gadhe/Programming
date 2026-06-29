@@ -1,6 +1,6 @@
 # 💻 C++ Programming Practice
 
-This folder contains my **C++ Programming Practice** programs covering fundamental concepts, object-oriented programming, Standard Template Library (STL), and problem-solving techniques. It serves as a structured collection of programs to strengthen my understanding of C++ and build a solid foundation in software development.
+This folder contains my **C++ programming practice** programs, covering core language concepts, object-oriented programming (OOP), the Standard Template Library (STL), and problem-solving techniques. It serves as a structured collection of programs to strengthen my C++ skills and build a solid foundation in software development.
 
 ---
 
@@ -20,15 +20,17 @@ CPP_Practice/
 
 ## 🎯 Topics Covered
 
-* Basic Programs
-* Object-Oriented Programming (OOP)
+* Basic Programming
 * Functions
 * Arrays & Strings
 * Pointers & References
 * Classes & Objects
-* Inheritance & Polymorphism
+* Constructors & Destructors
+* Inheritance
+* Polymorphism
 * Templates
-* STL (Standard Template Library)
+* Standard Template Library (STL)
+* Exception Handling
 * File Handling
 
 ---
@@ -55,15 +57,15 @@ g++ CPP_001.cpp -o Myexe
 
 * Strengthen C++ programming fundamentals
 * Develop object-oriented programming skills
-* Improve logical thinking and coding practices
+* Improve logical thinking and problem-solving abilities
 * Build a strong foundation for software development
-* Prepare for technical interviews
+* Prepare for technical interviews and coding challenges
 
 ---
 
 ## 📌 Note
 
-All programs are written for learning and skill development. The code emphasizes readability, modular design, and industry-standard coding practices.
+All programs are written for learning and skill development. The code emphasizes readability, clean coding practices, modular design, and adherence to C++ programming standards.
 
 ---
 
