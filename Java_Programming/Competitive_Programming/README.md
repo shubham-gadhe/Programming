@@ -46,7 +46,7 @@ Java_Competitive_Programming/
 
 ```bash id="5wqtpg"
 javac CP_001.java
-java CP_001
+java CP_001.java
 ```
 
 ---
