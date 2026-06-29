@@ -1,33 +1,70 @@
-# C Programming Practice
+# 💻 C Programming Practice
 
-This repository contains my daily C programming practice programs. It is created to improve my programming fundamentals, logical thinking, and problem-solving skills while building a strong foundation for Data Structures & Algorithms and technical interviews.
+This folder contains my **C Programming Practice** programs covering fundamental concepts, logical problem-solving, and core programming techniques. It serves as a structured collection of programs to strengthen my understanding of C and build a solid foundation in software development.
 
-## Topics Covered
+---
 
-- Basic Programs
-- Pattern Programs
-- Number Programs
-- Arrays
-- Strings
-- Pointers
-- Structures & Unions
-- Bitwise Operations
-- Dynamic Memory Allocation
-- File Handling
-- Recursion
-- Searching & Sorting
+## 📂 Folder Structure
 
-## Purpose
+```text
+Practice/
+│
+├── PR_001.c
+├── PR_002.c
+├── PR_003.c
+├── ...
+└── README.md
+```
 
-- Practice C programming daily
-- Improve coding and problem-solving skills
-- Build a strong foundation in C
-- Prepare for technical interviews
+---
 
-## Tools Used
+## 🎯 Topics Covered
 
-- C
-- GCC Compiler
-- Visual Studio Code
-- Git
-- GitHub
+* Basic Programs
+* Pattern Programs
+* Number Programs
+* Arrays & Strings
+* Pointers
+* Structures & Unions
+* Bitwise Operations
+* Dynamic Memory Allocation
+* File Handling
+* Recursion
+* Searching & Sorting
+
+---
+
+## 🛠️ Technologies Used
+
+* **Language:** C
+* **Compiler:** Visual Studio Code
+* **Standard:** ANSI C
+
+---
+
+## ▶️ Compile and Run
+
+```bash
+gcc PR_001.c -o Myexe
+./Myexe
+```
+
+---
+
+## ⭐ Purpose
+
+* Strengthen C programming fundamentals
+* Improve logical thinking and coding skills
+* Build a strong foundation for Data Structures & Algorithms
+* Prepare for technical interviews
+* Develop clean and efficient programming practices
+
+---
+
+## 📌 Note
+
+All programs are written for learning and skill development. The code emphasizes readability, proper formatting, and efficient implementation.
+
+---
+
+### Happy Coding! 🚀
