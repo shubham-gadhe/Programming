@@ -45,7 +45,7 @@ Practice/
 ## ▶️ Compile and Run
 
 ```bash
-gcc PR_001.c -o Myexe
+gcc PP_001.c -o Myexe
 ./Myexe
 ```
 
