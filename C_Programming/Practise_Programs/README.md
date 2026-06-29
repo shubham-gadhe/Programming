@@ -9,9 +9,9 @@ This folder contains my **C Programming Practice** programs covering fundamental
 ```text
 Practice/
 │
-├── PR_001.c
-├── PR_002.c
-├── PR_003.c
+├── PP_001.c
+├── PP_002.c
+├── PP_003.c
 ├── ...
 └── README.md
 ```
