@@ -1,10 +1,10 @@
-# 🏆 Competitive Programming in Java
+# Competitive Programming in Java
 
 This folder contains my **Competitive Programming** solutions implemented in **Java**. It focuses on solving algorithmic and computational problems efficiently while strengthening problem-solving skills, optimizing code, and preparing for coding competitions and technical interviews.
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 
 ```text id="8fzvzs"
 Java_Competitive_Programming/
@@ -18,7 +18,7 @@ Java_Competitive_Programming/
 
 ---
 
-## 🎯 Topics Covered
+## Topics Covered
 
 * Arrays & Strings
 * Number Theory
@@ -33,7 +33,7 @@ Java_Competitive_Programming/
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * **Language:** Java
 * **Compiler:** JDK
@@ -42,7 +42,7 @@ Java_Competitive_Programming/
 
 ---
 
-## ▶️ Compile and Run
+## Compile and Run
 
 ```bash id="5wqtpg"
 javac CP_001.java
@@ -51,7 +51,7 @@ java CP_001.java
 
 ---
 
-## ⭐ Purpose
+## Purpose
 
 * Enhance problem-solving and analytical skills
 * Develop efficient algorithmic solutions
@@ -61,10 +61,10 @@ java CP_001.java
 
 ---
 
-## 📌 Note
+## Note
 
 All solutions are implemented with a focus on clean code, optimized algorithms, readability, and adherence to competitive programming best practices.
 
 ---
 
-### Happy Coding! ☕
+### Happy Coding! 
