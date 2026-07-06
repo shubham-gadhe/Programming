@@ -1,10 +1,10 @@
-# 💻 C++ Programming Practice
+# C++ Programming Practice
 
 This folder contains my **C++ programming practice** programs, covering core language concepts, object-oriented programming (OOP), the Standard Template Library (STL), and problem-solving techniques. It serves as a structured collection of programs to strengthen my C++ skills and build a solid foundation in software development.
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 
 ```text
 CPP_Practice/
@@ -18,7 +18,7 @@ CPP_Practice/
 
 ---
 
-## 🎯 Topics Covered
+## Topics Covered
 
 * Basic Programming
 * Functions
@@ -35,7 +35,7 @@ CPP_Practice/
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * **Language:** C++
 * **Compiler:** G++
@@ -44,7 +44,7 @@ CPP_Practice/
 
 ---
 
-## ▶️ Compile and Run
+## Compile and Run
 
 ```bash
 g++ CPP_001.cpp -o Myexe
@@ -53,7 +53,7 @@ g++ CPP_001.cpp -o Myexe
 
 ---
 
-## ⭐ Purpose
+## Purpose
 
 * Strengthen C++ programming fundamentals
 * Develop object-oriented programming skills
@@ -63,10 +63,10 @@ g++ CPP_001.cpp -o Myexe
 
 ---
 
-## 📌 Note
+## Note
 
 All programs are written for learning and skill development. The code emphasizes readability, clean coding practices, modular design, and adherence to C++ programming standards.
 
 ---
 
-### Happy Coding! 🚀
+### Happy Coding! 
