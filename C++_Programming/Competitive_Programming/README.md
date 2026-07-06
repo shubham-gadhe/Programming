@@ -1,10 +1,10 @@
-# 🏆 Competitive Programming in C++
+# Competitive Programming in C++
 
 This folder contains my **Competitive Programming** solutions implemented in **C++**. It focuses on solving algorithmic and computational problems efficiently while strengthening problem-solving skills, optimizing code, and preparing for coding competitions and technical interviews.
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 
 ```text
 CPP_Competitive_Programming/
@@ -18,7 +18,7 @@ CPP_Competitive_Programming/
 
 ---
 
-## 🎯 Topics Covered
+## Topics Covered
 
 * Arrays & Strings
 * Number Theory
@@ -33,7 +33,7 @@ CPP_Competitive_Programming/
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * **Language:** C++
 * **Compiler:** G++
@@ -42,7 +42,7 @@ CPP_Competitive_Programming/
 
 ---
 
-## ▶️ Compile and Run
+## Compile and Run
 
 ```bash
 g++ CP_001.cpp -o Myexe
@@ -51,7 +51,7 @@ g++ CP_001.cpp -o Myexe
 
 ---
 
-## ⭐ Purpose
+## Purpose
 
 * Enhance problem-solving and analytical skills
 * Develop efficient algorithmic solutions
@@ -61,10 +61,10 @@ g++ CP_001.cpp -o Myexe
 
 ---
 
-## 📌 Note
+## Note
 
 All solutions are implemented with a focus on clean code, optimized algorithms, readability, and adherence to competitive programming best practices.
 
 ---
 
-### Happy Coding! 🚀
+### Happy Coding! 
