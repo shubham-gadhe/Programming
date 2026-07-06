@@ -1,10 +1,10 @@
-# 🚀 Competitive Programming in C
+# Competitive Programming in C
 
 This folder contains my **Competitive Programming** solutions written in **C**. These programs help me improve my problem-solving skills, coding logic, and prepare for coding interviews and programming contests.
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 
 ```text
 Competitive_Programming/
@@ -18,7 +18,7 @@ Competitive_Programming/
 
 ---
 
-## 🎯 Topics Covered
+## Topics Covered
 
 * Arrays
 * Strings
@@ -33,7 +33,7 @@ Competitive_Programming/
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * **Language:** C
 * **Compiler:** Visual Studio Code
@@ -41,7 +41,7 @@ Competitive_Programming/
 
 ---
 
-## ▶️ Compile and Run
+## Compile and Run
 
 ```bash
 gcc CP_001.c -o Myexe
@@ -50,7 +50,7 @@ gcc CP_001.c -o Myexe
 
 ---
 
-## ⭐ Purpose
+## Purpose
 
 * Improve problem-solving skills
 * Practice C programming
@@ -59,10 +59,10 @@ gcc CP_001.c -o Myexe
 
 ---
 
-## 📌 Note
+## Note
 
 All programs are written for learning and practice. The solutions focus on clean, simple, and easy-to-understand code.
 
 ---
 
-### Happy Coding! 🚀
+### Happy Coding! 
