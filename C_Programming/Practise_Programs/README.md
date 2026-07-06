@@ -1,10 +1,10 @@
-# 💻 C Programming Practice
+# C Programming Practice
 
 This folder contains my **C Programming Practice** programs covering fundamental concepts, logical problem-solving, and core programming techniques. It serves as a structured collection of programs to strengthen my understanding of C and build a solid foundation in software development.
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 
 ```text
 Practice/
@@ -18,7 +18,7 @@ Practice/
 
 ---
 
-## 🎯 Topics Covered
+## Topics Covered
 
 * Basic Programs
 * Pattern Programs
@@ -34,7 +34,7 @@ Practice/
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * **Language:** C
 * **Compiler:** Visual Studio Code
@@ -42,7 +42,7 @@ Practice/
 
 ---
 
-## ▶️ Compile and Run
+## Compile and Run
 
 ```bash
 gcc PP_001.c -o Myexe
@@ -51,7 +51,7 @@ gcc PP_001.c -o Myexe
 
 ---
 
-## ⭐ Purpose
+## Purpose
 
 * Strengthen C programming fundamentals
 * Improve logical thinking and coding skills
@@ -61,10 +61,10 @@ gcc PP_001.c -o Myexe
 
 ---
 
-## 📌 Note
+## Note
 
 All programs are written for learning and skill development. The code emphasizes readability, proper formatting, and efficient implementation.
 
 ---
 
-### Happy Coding! 🚀
+### Happy Coding! 
