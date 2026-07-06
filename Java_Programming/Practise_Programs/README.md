@@ -1,10 +1,10 @@
-# ☕ Java Programming Practice
+# Java Programming Practice
 
 This folder contains my **Java programming practice** programs covering core Java concepts, object-oriented programming (OOP), collections, exception handling, multithreading, and problem-solving techniques. It serves as a structured collection of programs to strengthen my Java skills and build a solid foundation in software development.
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 
 ```text id="dmh2np"
 Java_Practice/
@@ -18,7 +18,7 @@ Java_Practice/
 
 ---
 
-## 🎯 Topics Covered
+## Topics Covered
 
 * Basic Programming
 * Object-Oriented Programming (OOP)
@@ -35,7 +35,7 @@ Java_Practice/
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * **Language:** Java
 * **Compiler:** JDK
@@ -44,7 +44,7 @@ Java_Practice/
 
 ---
 
-## ▶️ Compile and Run
+## Compile and Run
 
 ```bash id="wkq9m4"
 javac PP_001.java
@@ -53,7 +53,7 @@ java PP_001.java
 
 ---
 
-## ⭐ Purpose
+## Purpose
 
 * Strengthen Java programming fundamentals
 * Develop object-oriented programming skills
@@ -63,11 +63,11 @@ java PP_001.java
 
 ---
 
-## 📌 Note
+## Note
 
 All programs are written for learning and skill development. The code emphasizes readability, clean coding practices, modular design, and adherence to Java programming standards.
 
 ---
 
-### Happy Coding! ☕
+### Happy Coding! 
 
