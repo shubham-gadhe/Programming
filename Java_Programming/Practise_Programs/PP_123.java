@@ -1,0 +1,70 @@
+//////////////////////////////////////////////////////////////////
+//
+//  File Name         : PP_123
+//
+//  Description       : This program demonstrates the use of a
+//                      user-defined class object to count capital
+//                      characters, small characters, digits, spaces,
+//                      and special symbols from a given string.
+//
+//                      The program contains an error because the
+//                      object is created using an undefined class
+//                      named program280.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 27/08/2026
+//
+//  Time Complexity   : O(n)
+//  Space Complexity  : O(n)
+//
+//////////////////////////////////////////////////////////////////
+
+import java.util.Scanner;
+
+class PP_123
+{
+    public static void main(String A[])
+    {
+        Scanner sobj = new Scanner(System.in);
+        String data = null;
+
+        program280 strobj = new program280();         // ERROR
+        int iRet = 0;
+
+        System.out.println("Enter String : ");
+        data = sobj.nextLine();
+
+        iRet = strobj.CountCapital(data);
+
+        System.out.println("Number of Capital Characters : " + iRet);
+
+        iRet = strobj.CountSmall(data);
+
+        System.out.println("Number of Small Characters : " + iRet);
+
+        iRet = strobj.CountDigits(data);
+
+        System.out.println("Number of Digits are : " + iRet);
+
+        iRet = strobj.CountSpace(data);
+
+        System.out.println("Number of Spaces are : " + iRet);
+
+        iRet = strobj.CountSpecial(data);
+
+        System.out.println("Number of Special Symbols are : " + iRet);
+
+        sobj.close();
+    }
+}
+
+//////////////////////////////////////////////////////////////////
+//
+//  Sample Input :
+//      Jay@123 Ganesh!
+//
+//  Sample Output :
+//
+//      Compilation Error
+//
+//////////////////////////////////////////////////////////////////
