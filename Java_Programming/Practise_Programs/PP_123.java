@@ -7,12 +7,8 @@
 //                      characters, small characters, digits, spaces,
 //                      and special symbols from a given string.
 //
-//                      The program contains an error because the
-//                      object is created using an undefined class
-//                      named program280.
-//
 //  Author            : Shubham Somanath Gadhe
-//  Date              : 27/08/2026
+//  Date              : 29/08/2026
 //
 //  Time Complexity   : O(n)
 //  Space Complexity  : O(n)
@@ -28,7 +24,7 @@ class PP_123
         Scanner sobj = new Scanner(System.in);
         String data = null;
 
-        program280 strobj = new program280();         // ERROR
+        PP_122 strobj = new PP_122();         // ERROR
         int iRet = 0;
 
         System.out.println("Enter String : ");
@@ -64,7 +60,5 @@ class PP_123
 //      Jay@123 Ganesh!
 //
 //  Sample Output :
-//
-//      Compilation Error
 //
 //////////////////////////////////////////////////////////////////
