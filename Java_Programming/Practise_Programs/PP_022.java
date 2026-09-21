@@ -1,40 +1,39 @@
-/*
-==============================================================================
- Program     : Check Whether a Number is Prime
-
- Description : Reads an integer from the user and determines whether the
-               specified number is prime.
-
- Author      : Shubham Gadhe
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  File Name         : PP_022
+//
+//  Description       : This program accepts a number from the user
+//                      and checks whether the number is prime or not
+//                      by initializing the boolean flag in the
+//                      for loop initialization section.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 09/07/2026
+//
+//  Time Complexity   : O(n)
+//  Space Complexity  : O(1)
+//
+//////////////////////////////////////////////////////////////////
 
 import java.util.Scanner;
 
-/*
-==============================================================================
- Class       : NumberX
-
- Description : Provides utility methods for performing operations on numbers.
-==============================================================================
-*/
 class NumberX
 {
-    /*
-    ==============================================================================
-     Function    : CheckPrime
+    //////////////////////////////////////////////////////////////////
+    //
+    //  Method Name      : CheckPrime()
+    //
+    //  Description      : It is used to check whether the given
+    //                     number is prime or not by initializing
+    //                     the boolean flag in the for loop and
+    //                     checking divisibility from 2 up to
+    //                     half of the given number.
+    //
+    //  Author           : Shubham Somanath Gadhe
+    //  Date             : 09/07/2026
+    //
+    //////////////////////////////////////////////////////////////////
 
-     Description : Determines whether the specified number is prime.
-
-     Parameters  : iNo - Number to be checked for primality.
-
-     Returns     : true  - If the number is prime.
-                   false - If the number is not prime.
-
-     Complexity  : Time  : O(N/2)
-                   Space : O(1)
-    ==============================================================================
-    */
     public boolean CheckPrime(int iNo)
     {
         int iCnt = 0;
@@ -44,13 +43,13 @@ class NumberX
         {
             if((iNo % iCnt) == 0)
             {
-               bFlag = false;
-               break;        
+                bFlag = false;
+                break;
             }
         }
 
         return bFlag;
-    }    
+    }
 }
 
 class PP_022
@@ -61,14 +60,14 @@ class PP_022
 
         int iValue = 0;
         boolean bRet = false;
-        
+
         System.out.println("Enter number : ");
-        iValue = sobj.nextInt(); 
-        
+        iValue = sobj.nextInt();
+
         NumberX nobj = new NumberX();
 
         bRet = nobj.CheckPrime(iValue);
-        
+
         if(bRet == true)
         {
             System.out.println("It is prime");
@@ -80,14 +79,13 @@ class PP_022
     }
 }
 
-/*
-==============================================================================
- Sample Input
-------------------------------------------------------------------------------
- 23
-
- Sample Output
-------------------------------------------------------------------------------
- It is prime
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Sample Input  :
+//      Enter number :
+//      17
+//
+//  Sample Output :
+//      It is prime
+//
+//////////////////////////////////////////////////////////////////
