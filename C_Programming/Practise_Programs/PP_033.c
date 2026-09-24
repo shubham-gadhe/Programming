@@ -1,35 +1,37 @@
-/*
-==============================================================================
- Program     : Display Numbers from 1 to N
-
- Description : Reads an integer from the user and displays all numbers from
-               1 to the specified value.
-
- Author      : Shubham Gadhe
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  File Name         : PP_033
+//
+//  Description       : This program accepts a number from the user
+//                      and displays numbers from 1 to the given
+//                      number using a for loop.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 08/07/2026
+//
+//  Time Complexity   : O(n)
+//  Space Complexity  : O(1)
+//
+//////////////////////////////////////////////////////////////////
 
 #include <stdio.h>
 
-/*
-==============================================================================
- Function    : Display
+//////////////////////////////////////////////////////////////////
+//
+//  Function Name     : Display()
+//
+//  Description       : It is used to display numbers from 1 to
+//                      the given number using a for loop.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 08/07/2026
+//
+//////////////////////////////////////////////////////////////////
 
- Description : Displays all numbers from 1 to the specified value.
-
- Parameters  : iNo - Upper limit of the sequence.
-
- Returns     : None
-
- Complexity  : Time  : O(n) 
-               Space : O(1)
-==============================================================================
-*/
 void Display(int iNo)
 {
     int iCnt = 0;
 
-    // Display numbers from 1 to the specified value.
     for(iCnt = 1; iCnt <= iNo; iCnt++)
     {
         printf("%d\t", iCnt);
@@ -50,14 +52,12 @@ int main(void)
     return 0;
 }
 
-/*
-==============================================================================
- Sample Input
-------------------------------------------------------------------------------
- 5
-
- Sample Output
-------------------------------------------------------------------------------
- 1    2    3    4    5
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Sample Input  :
+//      Enter number : 5
+//
+//  Sample Output :
+//      1    2    3    4    5
+//
+//////////////////////////////////////////////////////////////////
