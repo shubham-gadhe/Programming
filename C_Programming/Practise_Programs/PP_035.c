@@ -1,43 +1,43 @@
-/*
-==============================================================================
- Program     : Display Numbers from 0 to N-1
-
- Description : Reads an integer from the user and displays all numbers from
-               0 up to (but not including) the specified value.
-
- Author      : Shubham Gadhe
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  File Name         : PP_040
+//
+//  Description       : This program accepts a number from the user
+//                      and displays numbers from 0 to one less than
+//                      the given number using a for loop.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 08/07/2026
+//
+//  Time Complexity   : O(n)
+//  Space Complexity  : O(1)
+//
+//////////////////////////////////////////////////////////////////
 
 #include<stdio.h>
 
-/*
-==============================================================================
- Function    : Display
+//////////////////////////////////////////////////////////////////
+//
+//  Function Name     : Display()
+//
+//  Description       : It is used to display numbers starting from
+//                      0 up to one less than the given number.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 08/07/2026
+//
+//////////////////////////////////////////////////////////////////
 
- Description : Displays all numbers from 0 up to (but not including) the
-               specified value.
-
- Parameters  : iNo - Number of values to display.
-
- Returns     : None
-
- Complexity  : Time  : O(n)
-               Space : O(1)
-==============================================================================
-*/
 void Display(int iNo)
 {
     int iCnt = 0;
 
-    // Display numbers from 0 to (iNo - 1).
     for(iCnt = 0; iCnt < iNo; iCnt++)
     {
         printf("%d\t", iCnt);
     }
-    
-    printf("\n");
 
+    printf("\n");
 }
 
 int main()
@@ -52,14 +52,13 @@ int main()
     return 0;
 }
 
-/*
-==============================================================================
- Sample Input
-------------------------------------------------------------------------------
- 5
-
- Sample Output
-------------------------------------------------------------------------------
- 0    1    2    3    4
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Sample Input  :
+//      Enter number :
+//      5
+//
+//  Sample Output :
+//      0    1    2    3    4
+//
+//////////////////////////////////////////////////////////////////
