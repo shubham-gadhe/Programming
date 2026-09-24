@@ -1,46 +1,48 @@
-/*
-==============================================================================
- Program     : Display Numbers from 0 to N
-
- Description : Reads an integer from the user and displays all numbers from
-               0 to the specified value. If the entered value is negative,
-               an appropriate error message is displayed.
-
- Author      : Shubham Gadhe
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  File Name         : PP_036
+//
+//  Description       : This program accepts a frequency from the
+//                      user and displays numbers from 0 to the
+//                      given frequency.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 08/07/2026
+//
+//  Time Complexity   : O(n)
+//  Space Complexity  : O(1)
+//
+//////////////////////////////////////////////////////////////////
 
 #include<stdio.h>
 
-/*
-==============================================================================
- Function    : Display
+//////////////////////////////////////////////////////////////////
+//
+//  Function Name     : Display()
+//
+//  Description       : It is used to display numbers from 0 to
+//                      the given number. It also checks whether
+//                      the given input is negative.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 08/07/2026
+//
+//////////////////////////////////////////////////////////////////
 
- Description : Displays numbers from 0 to the specified value. If the value
-               is negative, it displays an error message.
-
- Parameters  : iNo - Upper limit of the sequence.
-
- Returns     : None
-
- Complexity  : Time  : O(n)
-               Space : O(1)
-==============================================================================
-*/
 void Display(int iNo)
 {
-    int iCnt= 0;
+    int iCnt = 0;
 
-    // Filter
     if(iNo < 0)
     {
         printf("Invalid input");
+        return;
     }
 
     for(iCnt = 0; iCnt <= iNo; iCnt++)
     {
         printf("%d", iCnt);
-    }  
+    }
 }
 
 int main()
@@ -48,30 +50,19 @@ int main()
     int iValue = 0;
 
     printf("Enter the frequency : ");
-    scanf("%d\n", &iValue);
+    scanf("%d", &iValue);
 
     Display(iValue);
-      
+
     return 0;
 }
 
-/*
-==============================================================================
- Sample Input
-------------------------------------------------------------------------------
- 5
-
- Sample Output
-------------------------------------------------------------------------------
- 012345
-
-==============================================================================
- Sample Input
-------------------------------------------------------------------------------
- -3
-
- Sample Output
-------------------------------------------------------------------------------
- Invalid input
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Sample Input  :
+//      Enter the frequency : 5
+//
+//  Sample Output :
+//      012345
+//
+//////////////////////////////////////////////////////////////////
