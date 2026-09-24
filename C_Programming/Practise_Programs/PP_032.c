@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////
 //
-//  File Name         : PP_037
+//  File Name         : PP_032
 //
 //  Description       : This program accepts a frequency from the
 //                      user and displays numbers from the given
