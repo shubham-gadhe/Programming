@@ -1,42 +1,44 @@
-/*
-==============================================================================
- Program     : Display Numbers from -N to N
-
- Description : Reads an integer from the user and displays all numbers from
-               the negative of the specified value up to the specified value.
-
- Author      : Shubham Gadhe
-==============================================================================
-*/   
+ //////////////////////////////////////////////////////////////////
+//
+//  File Name         : PP_045
+//
+//  Description       : This program accepts a number from the user
+//                      and displays numbers from the negative of
+//                      the given number up to the given number.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 08/07/2026
+//
+//  Time Complexity   : O(n)
+//  Space Complexity  : O(1)
+//
+//////////////////////////////////////////////////////////////////
 
 #include<stdio.h>
 
-/*
-==============================================================================
- Function    : Display
+//////////////////////////////////////////////////////////////////
+//
+//  Function Name     : Display()
+//
+//  Description       : It is used to display numbers starting from
+//                      the negative of the given number up to the
+//                      given number using a for loop.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 08/07/2026
+//
+//////////////////////////////////////////////////////////////////
 
- Description : Displays all numbers from -N to N.
-
- Parameters  : iNo - Absolute value used to generate the sequence.
-
- Returns     : None
-
- Complexity  : Time  : O(n)
-               Space : O(1)
-==============================================================================
-*/
 void Display(int iNo)
 {
     int iCnt = 0;
 
-    // Display numbers from -N to N.
     for(iCnt = -iNo; iCnt <= iNo; iCnt++)
     {
         printf("%d\t", iCnt);
     }
-    
-    printf("\n");
 
+    printf("\n");
 }
 
 int main()
@@ -51,14 +53,13 @@ int main()
     return 0;
 }
 
-/*
-==============================================================================
- Sample Input
-------------------------------------------------------------------------------
- 5
-
- Sample Output
-------------------------------------------------------------------------------
- -5    -4    -3    -2    -1    0    1    2    3    4    5
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Sample Input  :
+//      Enter number :
+//      5
+//
+//  Sample Output :
+//      -5    -4    -3    -2    -1    0    1    2    3    4    5
+//
+//////////////////////////////////////////////////////////////////
