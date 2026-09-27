@@ -1,12 +1,18 @@
-/*
-==============================================================================
- Program     : Display a String Five Times Using do-while Loop
-
- Description : Displays a string five times using a do-while loop.
-
- Author      : Shubham Gadhe
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  File Name         : PP_048
+//
+//  Description       : This program displays the message
+//                      "Jay Ganesh..." five times using
+//                      a do-while loop.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 08/07/2026
+//
+//  Time Complexity   : O(n)
+//  Space Complexity  : O(1)
+//
+//////////////////////////////////////////////////////////////////
 
 #include<stdio.h>
 
@@ -16,24 +22,25 @@ int main()
 
     iCnt = 1;
 
-    // Display the string five times.
     do
     {
         printf("Jay Ganesh...\n");
         iCnt++;
     }while(iCnt <= 5);
-    
+
     return 0;
 }
 
-/*
-==============================================================================
- Sample Output
-------------------------------------------------------------------------------
- Jay Ganesh...
- Jay Ganesh...
- Jay Ganesh...
- Jay Ganesh...
- Jay Ganesh...
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Sample Input  :
+//      No input
+//
+//  Sample Output :
+//      Jay Ganesh...
+//      Jay Ganesh...
+//      Jay Ganesh...
+//      Jay Ganesh...
+//      Jay Ganesh...
+//
+//////////////////////////////////////////////////////////////////
