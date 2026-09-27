@@ -1,14 +1,19 @@
-/*
-==============================================================================
- Program     : Extract Digits from an Integer
-
- Description : Extracts and displays each digit of an integer starting from
-               the least significant digit using the modulus (%) and division
-               (/) operators.
-
- Author      : Shubham Gadhe
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  File Name         : PP_051
+//
+//  Description       : This program extracts and displays each digit
+//                      of an integer starting from the least
+//                      significant digit using the modulus (%) and
+//                      division (/) operators.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 11/07/2026
+//
+//  Time Complexity   : O(n)
+//  Space Complexity  : O(1)
+//
+//////////////////////////////////////////////////////////////////
 
 #include<stdio.h>
 
@@ -35,12 +40,14 @@ int main()
     return 0;
 }
 
-/*
-==============================================================================
- Sample Output
-------------------------------------------------------------------------------
- 1
- 5
- 7
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Sample Input  :
+//      751
+//
+//  Sample Output :
+//      1
+//      5
+//      7
+//
+//////////////////////////////////////////////////////////////////
