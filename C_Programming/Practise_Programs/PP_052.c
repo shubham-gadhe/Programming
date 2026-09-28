@@ -1,13 +1,18 @@
-/*
-==============================================================================
- Program     : Display Digits of a Number Using while Loop
-
- Description : Extracts and displays each digit of a number starting from
-               the least significant digit using a while loop.
-
- Author      : Shubham Gadhe
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  File Name         : PP_052
+//
+//  Description       : This program extracts and displays each digit
+//                      of an integer starting from the least
+//                      significant digit using a while loop.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 11/07/2026
+//
+//  Time Complexity   : O(n)
+//  Space Complexity  : O(1)
+//
+//////////////////////////////////////////////////////////////////
 
 #include<stdio.h>
 
@@ -21,17 +26,19 @@ int main()
         iDigit = iNo % 10;
         printf("%d\n", iDigit);
         iNo = iNo / 10;
-    }    
-    
+    }
+
     return 0;
 }
 
-/*
-==============================================================================
- Sample Output
-------------------------------------------------------------------------------
- 1
- 5
- 7
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Sample Input  :
+//      751
+//
+//  Sample Output :
+//      1
+//      5
+//      7
+//
+//////////////////////////////////////////////////////////////////
