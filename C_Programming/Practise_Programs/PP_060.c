@@ -1,13 +1,18 @@
-/*
-==============================================================================
- Program     : Display Array Elements Using a Loop
-
- Description : Demonstrates how to traverse an integer array and display all
-               of its elements using a for loop.
-
- Author      : Shubham Gadhe
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  File Name         : PP_060
+//
+//  Description       : This program initializes an integer array
+//                      and displays all the elements of the array
+//                      using a for loop.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 11/07/2026
+//
+//  Time Complexity   : O(n)
+//  Space Complexity  : O(n)
+//
+//////////////////////////////////////////////////////////////////
 
 #include<stdio.h>
 
@@ -17,23 +22,24 @@ int main()
 
     int iCnt = 0;
 
-    // Traverse the array and display each element.
-    for(iCnt = 0; iCnt < 5 ; iCnt++)
+    for(iCnt = 0; iCnt < 5; iCnt++)
     {
         printf("%d\n", Arr[iCnt]);
-    }   
+    }
 
-    return 0;   
+    return 0;
 }
 
-/*
-==============================================================================
- Sample Output
-------------------------------------------------------------------------------
- 10
- 20
- 30
- 40
- 50
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Sample Input  :
+//      No input
+//
+//  Sample Output :
+//      10
+//      20
+//      30
+//      40
+//      50
+//
+//////////////////////////////////////////////////////////////////
