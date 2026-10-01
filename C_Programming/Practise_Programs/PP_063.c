@@ -1,63 +1,58 @@
-/*
-==============================================================================
- File Name   : PP_063.c
+//////////////////////////////////////////////////////////////////
+//
+//  File Name         : PP_063
+//
+//  Description       : This program demonstrates the concept of
+//                      Call By Value in C. A copy of the value is
+//                      passed to the function, so changes made
+//                      inside the function do not affect the
+//                      original variable.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 31/07/2026
+//
+//  Time Complexity   : O(1)
+//  Space Complexity  : O(1)
+//
+//////////////////////////////////////////////////////////////////
 
- Program     : Demonstrate Call by Value
+#include<stdio.h>
 
- Description : Demonstrates the concept of Call by Value. The function receives
-               a copy of the original variable, so any modification made inside
-               the function does not affect the original variable.
-
- Author      : Shubham Gadhe
-
- Time Complexity  : O(1)
- Space Complexity : O(1)
-==============================================================================
-*/
-
-#include<stdio.h> 
-
-/*
-==============================================================================
- Function Name : CallByValue
-
- Description   : Increments the received value by one. Since the argument is
-                 passed by value, the modification is made only on the local
-                 copy of the variable.
-
- Input         : Integer
- Output        : None
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Function Name     : CallByValue()
+//
+//  Description       : It increments the local copy of the value
+//                      passed to the function. The original variable
+//                      remains unchanged.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 31/07/2026
+//
+//////////////////////////////////////////////////////////////////
 
 void CallByValue(int iNo)
 {
     iNo++;
 }
 
-/*
-==============================================================================
- Entry Point Function
-==============================================================================
-*/
-
 int main()
 {
     int iValue = 11;
 
-    // Call the function by passing the value of iValue
     CallByValue(iValue);
 
-    // Display the value after the function call
     printf("Value after function call : %d\n", iValue);
 
-    return 0;   
+    return 0;
 }
 
-/*
-==============================================================================
- Sample Output
-------------------------------------------------------------------------------
-Value after function call : 11
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Sample Input  :
+//      No input
+//
+//  Sample Output :
+//      Value after function call : 11
+//
+//////////////////////////////////////////////////////////////////
