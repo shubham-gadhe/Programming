@@ -1,65 +1,61 @@
-/*
-==============================================================================
- File Name   : PP_065.c
-
- Program     : Demonstrate Array Base Address
-
- Description : Demonstrates that the name of an array represents the base
-               address of its first element. The array name is passed to a
-               function, where it is received as a pointer.
-
- Author      : Shubham Gadhe
-
- Time Complexity  : O(1)
- Space Complexity : O(1)
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  File Name         : PP_065
+//
+//  Description       : This program demonstrates passing the base
+//                      address of an array to a function using a
+//                      pointer.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 31/07/2026
+//
+//  Time Complexity   : O(1)
+//  Space Complexity  : O(n)
+//
+//////////////////////////////////////////////////////////////////
 
 #include<stdio.h>
 
-/*
-==============================================================================
- Function Name : Display
-
- Description   : Displays the address received through the pointer parameter.
-
- Input         : Address of an integer
- Output        : None
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Function Name     : Display()
+//
+//  Description       : It displays the address received through
+//                      the pointer parameter.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 31/07/2026
+//
+//////////////////////////////////////////////////////////////////
 
 void Display(int *iPtr)
 {
-   printf("Value of iPtr : %d\n", iPtr);
+    printf("Value of iPtr : %p\n", (void *)iPtr);
 }
-
-/*
-==============================================================================
- Entry Point Function
-==============================================================================
-*/
 
 int main()
 {
-   int Arr[5] = {10,20,30,40,50};
+    int Arr[5] = {10,20,30,40,50};
 
-   // Display the base address of the array
-   printf("Base address of Arr : %d\n", Arr);
+    printf("Base address of Arr : %p\n", (void *)Arr);
 
-   // Pass the base address of the array to the function
-   Display(Arr);    
+    Display(Arr);
 
-   return 0;  
+    return 0;
 }
 
-/*
-==============================================================================
- Sample Output
-------------------------------------------------------------------------------
-Base address of Arr : 6422296
-Value of iPtr : 6422296
-
-Note:
-The actual memory address may vary from one system or execution to another.
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Sample Input  :
+//      No input
+//
+//  Sample Output :
+//      Base address of Arr : 0x7ffe12345678
+//      Value of iPtr : 0x7ffe12345678
+//
+//  Note           :
+//      The actual memory address may be different each time
+//      the program is executed. Both addresses are the same
+//      because the base address of the array is passed to Display().
+//
+//////////////////////////////////////////////////////////////////
