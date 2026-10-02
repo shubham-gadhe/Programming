@@ -1,75 +1,64 @@
-/*
-==============================================================================
- File Name   : PP_069.c
+//////////////////////////////////////////////////////////////////
+//
+//  File Name         : PP_069
+//
+//  Description       : This program demonstrates passing an array
+//                      to a function and accessing consecutive
+//                      elements using pointer arithmetic.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 01/08/2026
+//
+//  Time Complexity   : O(1)
+//  Space Complexity  : O(n)
+//
+//////////////////////////////////////////////////////////////////
 
- Program     : Traverse Array Elements Using an Array Parameter
+#include<stdio.h> 
+ 
+//////////////////////////////////////////////////////////////////
+//
+//  Function Name     : Display()
+//
+//  Description       : It displays consecutive elements of the
+//                      array by incrementing the array pointer
+//                      after accessing each element.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 01/08/2026
+//
+//////////////////////////////////////////////////////////////////
 
- Description : Demonstrates that an array parameter behaves like a pointer
-               inside a function. Pointer arithmetic is used to access
-               consecutive elements of the array.
-
- Author      : Shubham Gadhe
-
- Time Complexity  : O(1)
- Space Complexity : O(1)
-==============================================================================
-*/
-
-#include<stdio.h>
-
-/*
-==============================================================================
- Function Name : Display
-
- Description   : Displays the first three elements of the array using pointer
-                 dereferencing and pointer arithmetic. Although the parameter
-                 is declared as an array, it is treated as a pointer inside
-                 the function.
-
- Input         : Integer array
- Output        : None
-==============================================================================
-*/
-
-void Display(int Arr[])
-{
-    // Display the first element
-    printf("%d\n", *Arr);      
-    
-    // Move to the next array element
-    Arr++;
-
-    // Move to the next array element
+void Display(int Arr[]) 
+{ 
     printf("%d\n", *Arr); 
-
-    // Display the third element
-    Arr++;
-
-    printf("%d\n", *Arr);
+ 
+    Arr++; 
+ 
+    printf("%d\n", *Arr); 
+ 
+    Arr++; 
+ 
+    printf("%d\n", *Arr); 
+} 
+ 
+int main() 
+{ 
+    int Brr[5] = {10,20,30,40,50}; 
+ 
+    Display(Brr); 
+ 
+    return 0; 
 }
 
-/*
-==============================================================================
- Entry Point Function
-==============================================================================
-*/
-
-int main()
-{
-   int Brr[5] = {10,20,30,40,50};  
-
-   // Pass the array to the function
-   Display(Brr);    
-
-   return 0;  
-}
-
-/*
-==============================================================================
- Sample Output
-------------------------------------------------------------------------------
-10
-20
-30
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Sample Input  :
+//      No input
+//
+//  Sample Output :
+//      10
+//      20
+//      30
+//
+//////////////////////////////////////////////////////////////////
