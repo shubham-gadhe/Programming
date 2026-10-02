@@ -1,74 +1,64 @@
-/*
-==============================================================================
- File Name   : PP_067.c
-
- Program     : Traverse Array Elements Using Pointer Arithmetic
-
- Description : Demonstrates pointer arithmetic by passing the base address of
-               an array to a function. The pointer is incremented to access
-               consecutive elements of the array.
-
- Author      : Shubham Gadhe
-
- Time Complexity  : O(1)
- Space Complexity : O(1)
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  File Name         : PP_067
+//
+//  Description       : This program demonstrates pointer arithmetic
+//                      by accessing consecutive elements of an array
+//                      using a pointer.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 31/07/2026
+//
+//  Time Complexity   : O(1)
+//  Space Complexity  : O(n)
+//
+//////////////////////////////////////////////////////////////////
 
 #include<stdio.h>
 
-/*
-==============================================================================
- Function Name : Display
-
- Description   : Displays the first three elements of the array using pointer
-                 dereferencing and pointer arithmetic.
-
- Input         : Address of an integer
- Output        : None
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Function Name     : Display()
+//
+//  Description       : It displays consecutive elements of the
+//                      array by incrementing the pointer after
+//                      accessing each element.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 31/07/2026
+//
+//////////////////////////////////////////////////////////////////
 
 void Display(int *iPtr)
 {
-    // Display the first element
-    printf("%d\n", *iPtr);     
-    
-    // Move the pointer to the next element
+    printf("%d\n", *iPtr);
+
     iPtr++;
 
-    // Display the second element
-    printf("%d\n", *iPtr); 
+    printf("%d\n", *iPtr);
 
-    // Move the pointer to the next element
     iPtr++;
 
-    // Display the third element
     printf("%d\n", *iPtr);
 }
 
-/*
-==============================================================================
- Entry Point Function
-==============================================================================
-*/
-
 int main()
 {
-   int Arr[5] = {10,20,30,40,50};  
+    int Arr[5] = {10,20,30,40,50};
 
-   // Pass the base address of the array to the function
-   Display(Arr);    
+    Display(Arr);
 
-   return 0;  
+    return 0;
 }
 
-/*
-==============================================================================
- Sample Output
-------------------------------------------------------------------------------
-10
-20
-30
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Sample Input  :
+//      No input
+//
+//  Sample Output :
+//      10
+//      20
+//      30
+//
+//////////////////////////////////////////////////////////////////
