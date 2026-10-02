@@ -1,59 +1,53 @@
-/*
-==============================================================================
- File Name   : PP_066.c
-
- Program     : Display First Element of an Array Using a Pointer
-
- Description : Demonstrates that when an array is passed to a function, its
-               base address is received as a pointer. Dereferencing the pointer
-               accesses the first element of the array.
-
- Author      : Shubham Gadhe
-
- Time Complexity  : O(1)
- Space Complexity : O(1)
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  File Name         : PP_066
+//
+//  Description       : This program demonstrates passing the base
+//                      address of an array to a function and accessing
+//                      the first element of the array using a pointer.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 31/07/2026
+//
+//  Time Complexity   : O(1)
+//  Space Complexity  : O(n)
+//
+//////////////////////////////////////////////////////////////////
 
 #include<stdio.h>
 
-/*
-==============================================================================
- Function Name : Display
-
- Description   : Displays the value stored at the memory location pointed to
-                 by the given pointer.
-
- Input         : Address of an integer
- Output        : None
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Function Name     : Display()
+//
+//  Description       : It displays the value stored at the memory
+//                      location pointed to by the pointer.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 31/07/2026
+//
+//////////////////////////////////////////////////////////////////
 
 void Display(int *iPtr)
 {
-    printf("%d\n", *iPtr);   
+    printf("%d\n", *iPtr);
 }
-
-/*
-==============================================================================
- Entry Point Function
-==============================================================================
-*/
 
 int main()
 {
-   int Arr[5] = {10,20,30,40,50};  
+    int Arr[5] = {10,20,30,40,50};
 
-   // Pass the base address of the array to the function
-   Display(Arr);    
+    Display(Arr);
 
-   return 0;  
+    return 0;
 }
 
-/*
-==============================================================================
- Sample Output
-------------------------------------------------------------------------------
-10
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Sample Input  :
+//      No input
+//
+//  Sample Output :
+//      10
+//
+//////////////////////////////////////////////////////////////////
