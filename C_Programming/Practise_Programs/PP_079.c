@@ -1,91 +1,77 @@
-/*
-==============================================================================
- File Name   : PP_079.c
+//////////////////////////////////////////////////////////////////
+//
+//  File Name         : PP_079
+//
+//  Description       : This program accepts elements of an array
+//                      from the user and calculates the summation
+//                      of all array elements using a function.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 01/08/2026
+//
+//  Time Complexity   : O(n)
+//  Space Complexity  : O(n)
+//
+//////////////////////////////////////////////////////////////////
 
- Program     : Summation of Array Elements
+#include<stdio.h>
 
- Description : Demonstrates the use of a Variable Length Array (VLA). The
-               program accepts array elements from the user, calculates the
-               summation of all elements, and displays the result.
-
- Author      : Shubham Gadhe
-
- Time Complexity  : O(n)
- Space Complexity : O(1)
-==============================================================================
-*/
-
-#include<stdio.h>   
-
-/*
-==============================================================================
- Function Name : Summation
-
- Description   : Traverses the array and calculates the summation of all
-                 its elements.
-
- Input         : Integer array, Size of the array
- Output        : Integer
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Function Name     : Summation()
+//
+//  Description       : It is used to calculate and return the
+//                      summation of all elements of the array.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 01/08/2026
+//
+//////////////////////////////////////////////////////////////////
 
 int Summation(int Arr[], int iSize)
-{  
-
+{
     int iCnt = 0;
     int iSum = 0;
-    
-    // Traverse the array and calculate the summation
+
     for(iCnt = 0; iCnt < iSize; iCnt++)
     {
         iSum = iSum + Arr[iCnt];
     }
+
     return iSum;
 }
-
-/*
-==============================================================================
- Entry Point Function
-==============================================================================
-*/
 
 int main()
 {
     int iLength = 4;
     int iCnt = 0;
     int iRet = 0;
-    
-    // Declare a Variable Length Array (VLA)
-    int Brr[iLength]; 
-    
-    // Accept array elements from the user
-    printf("Enter the elements : \n");    
+
+    int Brr[iLength];
+
+    printf("Enter the elements : \n");
 
     for(iCnt = 0; iCnt < iLength; iCnt++)
     {
         scanf("%d", &Brr[iCnt]);
     }
-     
-    // Calculate the summation of all array elements
-    iRet = Summation(Brr, iLength);  
-    
-    // Display the result
+
+    iRet = Summation(Brr, iLength);
+
     printf("Addition of all elements : %d\n", iRet);
-    
-    return 0;  
+
+    return 0;
 }
 
-/*
-==============================================================================
- Sample Input
-------------------------------------------------------------------------------
-10
-20
-30
-40
-
- Sample Output
-------------------------------------------------------------------------------
-Addition of all elements : 100
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Sample Input  :
+//      10
+//      20
+//      30
+//      40
+//
+//  Sample Output :
+//      Addition of all elements : 100
+//
+//////////////////////////////////////////////////////////////////
