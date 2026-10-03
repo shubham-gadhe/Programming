@@ -1,77 +1,70 @@
-/*
-==============================================================================
- File Name   : PP_074.c
-
- Program     : Display Array Elements Using a Loop
-
- Description : Demonstrates passing an array to a function and displaying its
-               elements using a for loop. This example illustrates the problem
-               of accessing array elements beyond the actual array size.
-
- Author      : Shubham Gadhe
-
- Time Complexity  : O(1)
- Space Complexity : O(1)
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  File Name         : PP_074
+//
+//  Description       : This program demonstrates passing an array
+//                      of smaller size to a function that attempts
+//                      to access eight elements.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 01/08/2026
+//
+//  Time Complexity   : O(n)
+//  Space Complexity  : O(n)
+//
+//////////////////////////////////////////////////////////////////
 
 #include<stdio.h>
 
-/*
-==============================================================================
- Function Name : Display
-
- Description   : Displays array elements using array indexing. The function
-                 attempts to access eight elements irrespective of the actual
-                 size of the array.
-
- Input         : Integer array
- Output        : None
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Function Name     : Display()
+//
+//  Description       : It is used to display eight elements from
+//                      the array using a for loop.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 01/08/2026
+//
+//////////////////////////////////////////////////////////////////
 
 void Display(int Arr[])
 {
     int iCnt = 0;
-    
-    // Attempt to display eight array elements
+
     for(iCnt = 0; iCnt < 8; iCnt++)
     {
         printf("%d\n", Arr[iCnt]);
     }
 }
 
-/*
-==============================================================================
- Entry Point Function
-==============================================================================
-*/
-
 int main()
 {
-   int Brr[4] = {10,20,30,40};  
+    int Brr[4] = {10,20,30,40};
 
-   // Pass the array to the function
-   Display(Brr);    
+    Display(Brr);
 
-   return 0;  
+    return 0;
 }
 
-/*
-==============================================================================
- Sample Output
-------------------------------------------------------------------------------
-10
-20
-30
-40
-<Garbage Value>
-<Garbage Value>
-<Garbage Value>
-<Garbage Value>
-
-Note:
-The last four values are unpredictable because the function accesses memory
-beyond the bounds of the array. This results in undefined behavior.
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Sample Input  :
+//      No input
+//
+//  Sample Output :
+//      10
+//      20
+//      30
+//      40
+//      Undefined / Garbage Values
+//      Undefined / Garbage Values
+//      Undefined / Garbage Values
+//      Undefined / Garbage Values
+//
+//  Note           :
+//      The array contains only 4 elements, but Display() attempts
+//      to access 8 elements. Accessing Brr[4] to Brr[7] is
+//      out-of-bounds and results in undefined behavior.
+//
+//////////////////////////////////////////////////////////////////
