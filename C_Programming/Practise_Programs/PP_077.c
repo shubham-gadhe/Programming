@@ -1,77 +1,67 @@
-/*
-==============================================================================
- File Name   : PP_077.c
-
- Program     : Display Variable Length Array Elements
-
- Description : Demonstrates the use of a Variable Length Array (VLA). The
-               array elements are assigned individually and then displayed by
-               passing the array and its size to a function.
-
- Author      : Shubham Gadhe
-
- Time Complexity  : O(n)
- Space Complexity : O(1)
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  File Name         : PP_077
+//
+//  Description       : This program demonstrates creating an array
+//                      using a variable size and passing the array
+//                      along with its size to a function.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 01/08/2026
+//
+//  Time Complexity   : O(n)
+//  Space Complexity  : O(n)
+//
+//////////////////////////////////////////////////////////////////
 
 #include<stdio.h>
 
-/*
-==============================================================================
- Function Name : Display
-
- Description   : Traverses the array and displays all its elements using the
-                 specified array size.
-
- Input         : Integer array, Size of the array
- Output        : None
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Function Name     : Display()
+//
+//  Description       : It is used to display all the elements of
+//                      the array using the given array size.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 01/08/2026
+//
+//////////////////////////////////////////////////////////////////
 
 void Display(int Arr[], int iSize)
 {
     int iCnt = 0;
-    
-    // Traverse the array and display each element
+
     for(iCnt = 0; iCnt < iSize; iCnt++)
     {
         printf("%d\n", Arr[iCnt]);
     }
 }
 
-/*
-==============================================================================
- Entry Point Function
-==============================================================================
-*/
-
 int main()
-{    
+{
     int iLength = 4;
-    
-    // Declare a Variable Length Array (VLA)
-    int Brr[iLength];   
+    int Brr[iLength];
 
-    // Assign values to the array elements
     Brr[0] = 10;
     Brr[1] = 20;
     Brr[2] = 30;
     Brr[3] = 40;
-    
-    // Pass the array and its size to the function
-    Display(Brr, iLength);   
-    
-    return 0;  
+
+    Display(Brr, iLength);
+
+    return 0;
 }
 
-/*
-==============================================================================
- Sample Output
-------------------------------------------------------------------------------
-10
-20
-30
-40
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Sample Input  :
+//      No input
+//
+//  Sample Output :
+//      10
+//      20
+//      30
+//      40
+//
+//////////////////////////////////////////////////////////////////
