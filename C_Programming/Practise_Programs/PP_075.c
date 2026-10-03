@@ -1,68 +1,61 @@
-/*
-==============================================================================
- File Name   : PP_075.c
-
- Program     : Display Array Elements Using Array Size
-
- Description : Demonstrates passing both the array and its size to a function.
-               The function traverses the array using the provided size and
-               displays all its elements.
-
- Author      : Shubham Gadhe
-
- Time Complexity  : O(n)
- Space Complexity : O(1)
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  File Name         : PP_075
+//
+//  Description       : This program demonstrates passing an array
+//                      along with its size to a function and
+//                      displaying all the elements of the array.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 01/08/2026
+//
+//  Time Complexity   : O(n)
+//  Space Complexity  : O(n)
+//
+//////////////////////////////////////////////////////////////////
 
 #include<stdio.h>
 
-/*
-==============================================================================
- Function Name : Display
-
- Description   : Traverses the array and displays all its elements using the
-                 size provided by the caller.
-
- Input         : Integer array, Size of the array
- Output        : None
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Function Name     : Display()
+//
+//  Description       : It is used to display all the elements of
+//                      the array using the given array size.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 01/08/2026
+//
+//////////////////////////////////////////////////////////////////
 
 void Display(int Arr[], int iSize)
 {
     int iCnt = 0;
-    
-    // Traverse the array and display each element
+
     for(iCnt = 0; iCnt < iSize; iCnt++)
     {
         printf("%d\n", Arr[iCnt]);
     }
 }
 
-/*
-==============================================================================
- Entry Point Function
-==============================================================================
-*/
-
 int main()
 {
-   int Brr[4] = {10,20,30,40};  
+    int Brr[4] = {10,20,30,40};
 
-   // Pass the array and its size to the function
-   Display(Brr, 4);    
+    Display(Brr, 4);
 
-   return 0;  
+    return 0;
 }
 
-/*
-==============================================================================
- Sample Output
-------------------------------------------------------------------------------
-10
-20
-30
-40
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Sample Input  :
+//      No input
+//
+//  Sample Output :
+//      10
+//      20
+//      30
+//      40
+//
+//////////////////////////////////////////////////////////////////
