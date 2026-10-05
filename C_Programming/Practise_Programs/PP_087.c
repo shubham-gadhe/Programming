@@ -1,46 +1,39 @@
-/*
-==============================================================================
- File Name   : PP_087.c
-
- Program     : Count Odd Elements in an Array
-
- Description : Accepts array elements from the user, counts the odd
-               elements in the array, and displays the total count.
-
- Author      : Shubham Gadhe
-
- Time Complexity  : O(n)
- Space Complexity : O(1)
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  File Name         : PP_087
+//
+//  Description       : This program dynamically allocates memory
+//                      for an integer array, accepts elements from
+//                      the user, counts the number of odd elements,
+//                      and releases the allocated memory.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 04/08/2026
+//
+//  Time Complexity   : O(n)
+//  Space Complexity  : O(n)
+//
+//////////////////////////////////////////////////////////////////
 
 #include<stdio.h>
 #include<stdlib.h>
 
-/*
-==============================================================================
- Function    : CountOdd
-
- Description : Counts and returns the number of odd elements present
-               in the specified integer array.
-
- Parameters  : Arr   - Pointer to the integer array.
-               iSize - Number of elements in the array.
-
- Returns     : Number of odd elements.
-
- Complexity  : Time  : O(n)
-               Space : O(1)
-
- Note        : n represents the number of elements in the array.
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Function Name     : CountOdd()
+//
+//  Description       : It is used to count and return the number
+//                      of odd elements present in the array.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 04/08/2026
+//
+//////////////////////////////////////////////////////////////////
 
 int CountOdd(int Arr[], int iSize)
 {
     int iCnt = 0, iCount = 0;
 
-    // Count the odd elements.
     for(iCnt = 0; iCnt < iSize; iCnt++)
     {
         if(Arr[iCnt] % 2 != 0)
@@ -57,49 +50,38 @@ int main()
     int *Brr = NULL;
     int iLength = 0, iCnt = 0, iRet = 0;
 
-    // Accept the number of elements.
     printf("Enter the number of elements : \n");
     scanf("%d", &iLength);
 
-    // Dynamically allocate memory for the array.
     Brr = (int *)malloc(sizeof(int) * iLength);
 
-    // Accept array elements from the user.
     printf("Enter the elements : \n");
-    
+
     for(iCnt = 0; iCnt < iLength; iCnt++)
     {
         scanf("%d", &Brr[iCnt]);
     }
 
-    // Count the odd elements.
     iRet = CountOdd(Brr, iLength);
 
-    printf("Odd elements are :  %d\n", iRet);
+    printf("Odd elements are : %d\n", iRet);
 
-    // Release the dynamically allocated memory.
-    free(Brr);    
+    free(Brr);
 
     return 0;
 }
 
-/*
-==============================================================================
- Sample Input
-------------------------------------------------------------------------------
-Enter the number of elements :
-6
-
-Enter the elements :
-10
-15
-20
-13
-8
-9
-
- Sample Output
-------------------------------------------------------------------------------
-Odd elements are : 3
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Sample Input  :
+//      5
+//      10
+//      15
+//      20
+//      25
+//      30
+//
+//  Sample Output :
+//      Odd elements are : 2
+//
+//////////////////////////////////////////////////////////////////
