@@ -1,53 +1,48 @@
-/*
-==============================================================================
- File Name   : PP_089.c
-
- Program     : Search Element 11 in an Array
-
- Description : Accepts array elements from the user, searches for the
-               value 11, and displays whether it is present or not.
-
- Author      : Shubham Gadhe
-
- Time Complexity  : O(n)
- Space Complexity : O(1)
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  File Name         : PP_089
+//
+//  Description       : This program dynamically allocates memory
+//                      for an integer array, accepts elements from
+//                      the user, and searches for the presence of
+//                      the number 11 using linear search.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 04/08/2026
+//
+//  Time Complexity   : O(n)
+//  Space Complexity  : O(n)
+//
+//////////////////////////////////////////////////////////////////
 
 #include<stdio.h>
 #include<stdlib.h>
 #include<stdbool.h>
 
-/*
-==============================================================================
- Function    : LinearSearch
-
- Description : Searches for the value 11 in the specified integer
-               array and returns the search result.
-
- Parameters  : Arr   - Pointer to the integer array.
-               iSize - Number of elements in the array.
-
- Returns     : true if 11 is present, otherwise false.
-
- Complexity  : Time  : O(n)
-               Space : O(1)
-
- Note        : n represents the number of elements in the array.
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Function Name     : LinearSearch()
+//
+//  Description       : It is used to search for the number 11
+//                      in the array using linear search and
+//                      returns true if the element is present,
+//                      otherwise returns false.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 04/08/2026
+//
+//////////////////////////////////////////////////////////////////
 
 bool LinearSearch(int Arr[], int iSize)
 {
     int iCnt = 0;
 
-    // Search for the value 11.
     for(iCnt = 0; iCnt < iSize; iCnt++)
     {
-       if(Arr[iCnt] == 11)
-       {
-            return true;        
-       }
+        if(Arr[iCnt] == 11)
+        {
+            return true;
+        }
     }
 
     return false;
@@ -59,56 +54,45 @@ int main()
     int iLength = 0, iCnt = 0;
     bool bRet = false;
 
-    // Accept the number of elements.
     printf("Enter the number of elements : \n");
     scanf("%d", &iLength);
 
-    // Dynamically allocate memory for the array.
     Brr = (int *)malloc(sizeof(int) * iLength);
 
-    // Accept array elements from the user.
     printf("Enter the elements : \n");
-    
+
     for(iCnt = 0; iCnt < iLength; iCnt++)
     {
         scanf("%d", &Brr[iCnt]);
     }
 
-    // Search for the value 11.
     bRet = LinearSearch(Brr, iLength);
-    
-    // Display the result.
+
     if(bRet == true)
     {
-        printf("Element is present \n");
+        printf("Element is present\n");
     }
     else
     {
-        printf("Element is not present \n");
+        printf("Element is not present\n");
     }
 
-    // Release the dynamically allocated memory.
-    free(Brr);    
+    free(Brr);
 
     return 0;
 }
 
-/*
-==============================================================================
- Sample Input
-------------------------------------------------------------------------------
-Enter the number of elements :
-5
-
-Enter the elements :
-10
-20
-11
-30
-40
-
- Sample Output
-------------------------------------------------------------------------------
-Element is present
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Sample Input  :
+//      5
+//      10
+//      20
+//      11
+//      30
+//      40
+//
+//  Sample Output :
+//      Element is present
+//
+//////////////////////////////////////////////////////////////////
