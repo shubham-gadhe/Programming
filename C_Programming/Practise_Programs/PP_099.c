@@ -1,18 +1,18 @@
-/*
-==============================================================================
- File Name   : PP_099.c
-
- Program     : Display a String
-
- Description : Initializes a character array with a string and displays
-               the string using the standard output function.
-
- Author      : Shubham Gadhe
-
- Time Complexity  : O(n)
- Space Complexity : O(1)
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  File Name         : PP_099
+//
+//  Description       : This program demonstrates the declaration
+//                      of a character array containing a string
+//                      and displays the string on the screen.
+//
+//  Author            : Shubham Somanath Gadhe
+//  Date              : 05/08/2026
+//
+//  Time Complexity   : O(n)
+//  Space Complexity  : O(n)
+//
+//////////////////////////////////////////////////////////////////
 
 #include<stdio.h>
 
@@ -20,16 +20,17 @@ int main()
 {
     char str[] = "Jay Ganesh...";
 
-    // Display the string.
-    printf("%s\n", str);        
+    printf("%s\n", str);
 
     return 0;
 }
 
-/*
-==============================================================================
- Sample Output
-------------------------------------------------------------------------------
-Jay Ganesh...
-==============================================================================
-*/
+//////////////////////////////////////////////////////////////////
+//
+//  Sample Input  :
+//      No input required.
+//
+//  Sample Output :
+//      Jay Ganesh...
+//
+//////////////////////////////////////////////////////////////////
