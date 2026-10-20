@@ -13,7 +13,6 @@ Practise_Programs/
 ├── PP_002.c
 ├── PP_003.c
 ├── ...
-├── PP_234.c
 └── README.md
 ```
 
